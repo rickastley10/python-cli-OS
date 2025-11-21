@@ -97,5 +97,5 @@ while True:
             anotes()
         if screeninput == "load notes":
             lnotes()
-    elif screeninput == "cls" or "clear":
+    if screeninput == "cls" or "clear":
         cls()
