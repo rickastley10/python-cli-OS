@@ -38,6 +38,7 @@ def menu():
         print("guess the number")
         print("add notes")
         print("load notes")
+        print("clear")
         print("███████████████")
     else:
         screen()
@@ -74,6 +75,7 @@ def anotes():
 def lnotes():
     print(note)
 
+
 screen()
 
 
@@ -95,3 +97,5 @@ while True:
             anotes()
         if screeninput == "load notes":
             lnotes()
+    elif screeninput == "cls" or "clear":
+        cls()
