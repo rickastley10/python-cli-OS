@@ -1,4 +1,4 @@
-import os
+
 #█
 
 def cls():
@@ -11,37 +11,22 @@ def bootupscreen():
     print("████████████████████████████")
     print("████████████████████████████")
 bootupscreen()
-screen1 = 1
+screen1 = 2
 
 
-
-def screen():
-    if screen1 == 1:
-        
-        
-        print("███████████████")
-        print("███████████████")
-        print("███████████████")
-        print("███████████████")
-        print("menu███████████")
-        print("type ''m'' or \n''menu'' to enter the menu")
-    else:
-        menu()
 
 def menu():
     if screen1 == 2:
         
         
         print("███████████████")
-        print("type ''m'' or \n''menu'' to exit the menu")
-        print("calculator")
-        print("guess the number")
-        print("add notes")
-        print("load notes")
-        print("clear")
+        print("1.calculator")
+        print("2.guess the number")
+        print("3.add notes")
+        print("4.load notes")
+        print("5.clear")
         print("███████████████")
-    else:
-        screen()
+
     
 
 
@@ -76,26 +61,23 @@ def lnotes():
     print(note)
 
 
-screen()
+
 
 
 while True:
-    screen()
+    menu()
 
     screeninput = input("$> ")
-    if screen1 == 1:
-        if screeninput == "m" or "menu" == 1:
-            screen1 = 2
-    elif screen1 == 2:
-        if screeninput == "m" or "menu" and screen1 == 2:
-            screen1 = 1
-        if screeninput == "calculator":
+
+    if screen1 == 2:
+
+        if screeninput == "calculator" or screeninput =="1":
             calc()
-        if screeninput == "guess the number":
+        if screeninput == "guess the number"or screeninput =="2":
             gtn()
-        if screeninput == "add notes":
+        if screeninput == "add notes"or screeninput =="3":
             anotes()
-        if screeninput == "load notes":
+        if screeninput == "load notes"or screeninput =="4":
             lnotes()
-    if screeninput == "cls" or "clear":
+    if screeninput == "cls" or "clear"or screeninput =="5":
         cls()
