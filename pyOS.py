@@ -24,7 +24,7 @@ def menu():
         print("2.guess the number")
         print("3.add notes")
         print("4.load notes")
-        print("5.shutdowm")
+        print("5.shutdown")
         print("███████████████")
 
     
@@ -81,3 +81,4 @@ while True:
             a4()
         if screeninput == "shutdown" or screeninput =="5":
             stop()
+
